@@ -1,0 +1,20 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+.price h2 {
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 1rem;
+  color: #050505;
+  background-color: rgb(243, 247, 112);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}

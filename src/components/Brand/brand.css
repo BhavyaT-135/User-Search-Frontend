@@ -1,0 +1,20 @@
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+
+.brand h2 {
+  font-size: 24px;
+  line-height: 34px;
+  margin-bottom: 1rem;
+  color: #050505;
+  background-color: rgb(254, 143, 165);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}

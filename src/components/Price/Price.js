@@ -2,9 +2,10 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import './price.css'
+import Table from '../Table/Table'
 
 function Price() {
-  const [users, setUsers] = useState({})
+  const [users, setUsers] = useState([])
 
   useEffect(() => {
     axios.get('http://localhost:5000/api/v1/users/phone_price')
@@ -14,7 +15,10 @@ function Price() {
   }, [])
 
   return (
-    <div>Price</div>
+    <div className='price'>
+      <h2>Male Users which have phone price greater than 10,000.</h2>
+      <Table users={users} />
+    </div>
   )
 }
 
