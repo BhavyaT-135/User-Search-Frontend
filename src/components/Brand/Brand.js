@@ -8,7 +8,7 @@ function Brand() {
   const [users, setUsers] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/v1/users/car_brand')
+    axios.get('https://user-search-backend.vercel.app/api/v1/users/car_brand')
     .then(res => {
       setUsers(res.data.users)
     })

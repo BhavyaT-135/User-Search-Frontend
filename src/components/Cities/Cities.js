@@ -8,7 +8,7 @@ function Cities() {
   const [cities, setCities] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/v1/users/cities')
+    axios.get('https://user-search-backend.vercel.app/api/v1/users/cities')
     .then(res => {
       setCities(res.data.users)
     })

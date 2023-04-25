@@ -8,7 +8,7 @@ function Price() {
   const [users, setUsers] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/v1/users/phone_price')
+    axios.get('https://user-search-backend.vercel.app/api/v1/users/phone_price')
     .then(res => {
       setUsers(res.data.users)
     })

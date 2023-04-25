@@ -8,7 +8,7 @@ function Name() {
   const [users, setUsers] = useState([])
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/v1/users/last_name')
+    axios.get('https://user-search-backend.vercel.app/api/v1/users/last_name')
     .then(res => {
       setUsers(res.data.users)
     })
